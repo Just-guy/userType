@@ -1,6 +1,6 @@
 <?
 
-namespace lib\customClass\usertype;
+namespace customUserType;
 
 use Bitrix\Main\Text\HtmlFilter;
 use Bitrix\Main\Loader,
@@ -8,17 +8,17 @@ use Bitrix\Main\Loader,
 	Bitrix\Iblock;
 
 /**
- * Class CUserTypeCustomLists
- * @package lib\usertype
+ * Class CustomListsWithPucture
+ * @package customUserType
  */
 
-class CUserTypeCustomLists extends \Bitrix\Main\UserField\Types\StringType
+class CustomListsWithPucture extends \Bitrix\Main\UserField\Types\StringType
 {
 	public static function GetUserTypeDescription(): array
 	{
 		return array(
-			"USER_TYPE_ID" => "customlists",
-			"CLASS_NAME" => "customUserType\CUserTypeCustomLists",
+			"USER_TYPE_ID" => "customlistswithpicture",
+			"CLASS_NAME" => "customUserType\CustomListsWithPucture",
 			"DESCRIPTION" => "Список с изображением (CUSTOM)",
 			"BASE_TYPE" => "string",
 			'PROPERTY_TYPE' => Iblock\PropertyTable::TYPE_STRING,
