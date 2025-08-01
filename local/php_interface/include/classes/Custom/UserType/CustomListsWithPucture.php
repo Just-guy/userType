@@ -1,6 +1,6 @@
 <?
 
-namespace customUserType;
+namespace Custom\UserType;
 
 use Bitrix\Main\Text\HtmlFilter;
 use Bitrix\Main\Loader,
