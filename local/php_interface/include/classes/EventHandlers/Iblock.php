@@ -10,6 +10,7 @@ class Iblock
 	{
 		$eventManager = EventManager::getInstance();
 		
+		$eventManager->addEventHandler('main', 'OnUserTypeBuildList', ['Custom\UserType\Usertype2StringInRow', 'GetUserTypeDescription']);
 		$eventManager->addEventHandler('main', 'OnUserTypeBuildList', ['Custom\UserType\CustomListsWithPucture', 'GetUserTypeDescription']);
 	}
 }
